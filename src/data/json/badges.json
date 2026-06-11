@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "成长冠军",
+    "description": "累计获得 4000 点成长值，学习探索持续升级。",
+    "icon": "🏆",
+    "earned": true,
+    "earnedTime": "2026-05-18",
+    "rarity": "legendary"
+  },
+  {
+    "id": 2,
+    "name": "连续学习火苗",
+    "description": "连续学习 30 天，保持稳定学习节奏。",
+    "icon": "🔥",
+    "earned": true,
+    "earnedTime": "2026-06-08",
+    "rarity": "epic"
+  },
+  {
+    "id": 3,
+    "name": "阅读小书虫",
+    "description": "完成 20 次绘本朗读与阅读练习。",
+    "icon": "📚",
+    "earned": true,
+    "earnedTime": "2026-05-26",
+    "rarity": "rare"
+  },
+  {
+    "id": 4,
+    "name": "口语小主播",
+    "description": "在口语表达任务中获得 90 分以上。",
+    "icon": "🎤",
+    "earned": true,
+    "earnedTime": "2026-06-04",
+    "rarity": "rare"
+  },
+  {
+    "id": 5,
+    "name": "词汇宝石收集者",
+    "description": "掌握 100 个主题词汇并完成复习。",
+    "icon": "💎",
+    "earned": true,
+    "earnedTime": "2026-05-30",
+    "rarity": "epic"
+  },
+  {
+    "id": 6,
+    "name": "闪耀表达星",
+    "description": "故事表达条理清晰，获得老师特别表扬。",
+    "icon": "🌟",
+    "earned": true,
+    "earnedTime": "2026-06-03",
+    "rarity": "common"
+  },
+  {
+    "id": 7,
+    "name": "神秘宝箱",
+    "description": "完成下一次综合挑战后解锁。",
+    "icon": "🔒",
+    "earned": false,
+    "rarity": "common"
+  },
+  {
+    "id": 8,
+    "name": "探险地图家",
+    "description": "连续完成四周学习计划即可解锁。",
+    "icon": "🧭",
+    "earned": false,
+    "rarity": "rare"
+  },
+  {
+    "id": 9,
+    "name": "火箭冲刺王",
+    "description": "单周成长值突破 1000 EXP 即可解锁。",
+    "icon": "🚀",
+    "earned": false,
+    "rarity": "legendary"
+  }
+]

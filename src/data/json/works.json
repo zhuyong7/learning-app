@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "title": "森林里的彩虹桥朗读",
+    "type": "reading",
+    "cover": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+    "score": 96,
+    "duration": "3分20秒",
+    "completedAt": "2026-06-09T19:40:00",
+    "favorite": true,
+    "audioUrl": "/mock/audio/rainbow-bridge.mp3",
+    "aiComment": "语速稳定，重音处理自然，建议继续练习长句停顿。",
+    "teacherComment": "本次朗读情绪表达很好，结尾部分可以再放慢一点。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "我的太空旅行故事",
+    "type": "story",
+    "cover": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80",
+    "score": 93,
+    "duration": "4分10秒",
+    "completedAt": "2026-06-08T20:12:00",
+    "favorite": false,
+    "audioUrl": "/mock/audio/space-story.mp3",
+    "aiComment": "想象力丰富，故事结构完整，可以补充更多连接词。",
+    "teacherComment": "开头很吸引人，下一次可以尝试加入对话。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "动物朋友单词挑战",
+    "type": "vocabulary",
+    "cover": "https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=900&q=80",
+    "score": 91,
+    "duration": "2分45秒",
+    "completedAt": "2026-06-07T18:25:00",
+    "favorite": true,
+    "audioUrl": "/mock/audio/animal-words.mp3",
+    "aiComment": "词汇掌握较好，容易混淆的发音已经明显改善。",
+    "teacherComment": "注意 lion 与 line 的发音区别。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "购物场景口语对话",
+    "type": "speaking",
+    "cover": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=900&q=80",
+    "score": 89,
+    "duration": "5分05秒",
+    "completedAt": "2026-06-06T19:02:00",
+    "favorite": false,
+    "audioUrl": "/mock/audio/shopping-dialog.mp3",
+    "aiComment": "对话反应速度不错，疑问句语调可继续练习。",
+    "teacherComment": "表达很自然，建议增加礼貌用语。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "海底冒险绘本复述",
+    "type": "reading",
+    "cover": "https://images.unsplash.com/photo-1439405326854-014607f694d7?auto=format&fit=crop&w=900&q=80",
+    "score": 95,
+    "duration": "3分58秒",
+    "completedAt": "2026-06-05T20:18:00",
+    "favorite": true,
+    "audioUrl": "/mock/audio/ocean-retell.mp3",
+    "aiComment": "复述顺序清晰，细节记忆准确。",
+    "teacherComment": "可以尝试用自己的话总结结尾。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "天气播报小主播",
+    "type": "speaking",
+    "cover": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80",
+    "score": 90,
+    "duration": "2分50秒",
+    "completedAt": "2026-06-04T18:45:00",
+    "favorite": false,
+    "audioUrl": "/mock/audio/weather-report.mp3",
+    "aiComment": "播报节奏清楚，天气词汇使用准确。",
+    "teacherComment": "可以增加语气变化，让播报更有感染力。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "魔法花园看图说话",
+    "type": "story",
+    "cover": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80",
+    "score": 94,
+    "duration": "4分30秒",
+    "completedAt": "2026-06-03T19:30:00",
+    "favorite": true,
+    "audioUrl": "/mock/audio/magic-garden.mp3",
+    "aiComment": "画面描述生动，表达层次越来越清晰。",
+    "teacherComment": "非常棒，可以继续练习因果关系表达。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "早餐菜单词汇练习",
+    "type": "vocabulary",
+    "cover": "https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=900&q=80",
+    "score": 87,
+    "duration": "2分35秒",
+    "completedAt": "2026-06-02T08:20:00",
+    "favorite": false,
+    "audioUrl": "/mock/audio/breakfast-words.mp3",
+    "aiComment": "基础词汇掌握扎实，建议复习 cereal 与 pancake。",
+    "teacherComment": "发音准确度稳定提升，继续保持。",
+    "skills": [
+      {
+        "key": "listening",
+        "label": "听力",
+        "value": 86,
+        "max": 100
+      },
+      {
+        "key": "speaking",
+        "label": "口语",
+        "value": 92,
+        "max": 100
+      },
+      {
+        "key": "reading",
+        "label": "阅读",
+        "value": 88,
+        "max": 100
+      },
+      {
+        "key": "expression",
+        "label": "表达",
+        "value": 90,
+        "max": 100
+      },
+      {
+        "key": "vocabulary",
+        "label": "词汇",
+        "value": 95,
+        "max": 100
+      }
+    ]
+  }
+]

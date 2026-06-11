@@ -1,0 +1,72 @@
+{
+  "todayMetrics": [
+    {
+      "id": "duration",
+      "label": "累计学习时长",
+      "value": 420,
+      "unit": "分钟",
+      "delta": 15,
+      "icon": "⏱️",
+      "tone": "green"
+    },
+    {
+      "id": "tasks",
+      "label": "完成学习任务",
+      "value": 18,
+      "unit": "个",
+      "delta": 22,
+      "icon": "✅",
+      "tone": "blue"
+    },
+    {
+      "id": "score",
+      "label": "平均作品评分",
+      "value": 92,
+      "unit": "分",
+      "delta": 8,
+      "icon": "⭐",
+      "tone": "yellow"
+    },
+    {
+      "id": "exp",
+      "label": "今日成长值",
+      "value": 120,
+      "unit": "EXP",
+      "delta": 12,
+      "icon": "💎",
+      "tone": "pink"
+    }
+  ],
+  "abilityScores": [
+    {
+      "key": "listening",
+      "label": "听力",
+      "value": 86,
+      "max": 100
+    },
+    {
+      "key": "speaking",
+      "label": "口语",
+      "value": 92,
+      "max": 100
+    },
+    {
+      "key": "reading",
+      "label": "阅读",
+      "value": 78,
+      "max": 100
+    },
+    {
+      "key": "expression",
+      "label": "表达",
+      "value": 88,
+      "max": 100
+    },
+    {
+      "key": "vocabulary",
+      "label": "词汇",
+      "value": 94,
+      "max": 100
+    }
+  ]
+}

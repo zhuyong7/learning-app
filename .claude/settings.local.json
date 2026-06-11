@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/admin/.claude/plugins/cache/superpowers-marketplace/superpowers/5.1.0/skills/brainstorming/**)",
+      "Read(//c/Users/admin/.claude/plugins/cache/superpowers-marketplace/superpowers/5.1.0/**)",
+      "Bash(/c/Users/admin/.claude/plugins/cache/superpowers-marketplace/superpowers/5.1.0/skills/brainstorming/scripts/start-server.sh --project-dir /f/vs-project/learning-app)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npm list *)",
+      "Bash(python -)",
+      "Bash(npm ls *)",
+      "Bash(npm --version)",
+      "Bash(git -C /f/vs-project/learning-app status --short)",
+      "Bash(git -C /f/vs-project/learning-app diff --stat HEAD)",
+      "Bash(npm --prefix /f/vs-project/learning-app run typecheck)",
+      "Bash(npm --prefix /f/vs-project/learning-app run build)",
+      "Bash(node -e \"const p=require\\('/f/vs-project/learning-app/package-lock.json'\\).packages; for \\(const n of ['react','react-dom','@types/react','@types/react-dom','tailwindcss','@tailwindcss/postcss','postcss','autoprefixer','vite','@vitejs/plugin-react','typescript']\\) console.log\\(n, p['node_modules/'+n]?.version\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\); const p=JSON.parse\\(fs.readFileSync\\('f:/vs-project/learning-app/package-lock.json','utf8'\\)\\).packages; for \\(const n of ['react','react-dom','@types/react','@types/react-dom','tailwindcss','@tailwindcss/postcss','postcss','autoprefixer','vite','@vitejs/plugin-react','typescript']\\) console.log\\(n, p['node_modules/'+n]?.version\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -)",
+      "Bash(git -C /f/vs-project/learning-app diff -- src/types/domain.ts src/utils/classNames.ts src/utils/format.ts src/data/mockUser.ts src/data/mockStats.ts src/data/mockWorks.ts src/data/mockBadges.ts src/data/mockTrends.ts src/data/mockAssistant.ts)",
+      "Bash(node -)",
+      "Bash(node --input-type=module)",
+      "Bash(git -C /f/vs-project/learning-app diff --stat)",
+      "Bash(git -C /f/vs-project/learning-app diff -- src/components/dashboard src/pages/HomePage.tsx src/App.tsx src/main.tsx src/routes)",
+      "Bash(git -C /f/vs-project/learning-app rev-parse --show-toplevel)"
+    ]
+  }
+}

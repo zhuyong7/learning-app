@@ -1,0 +1,33 @@
+{
+  "name": "learning-growth-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "verify:css": "node scripts/verify-built-css.mjs",
+    "verify:boundaries": "node scripts/verify-component-boundaries.mjs",
+    "verify:data": "node scripts/verify-local-json-data.mjs"
+  },
+  "dependencies": {
+    "echarts": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "^3.4.17",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
