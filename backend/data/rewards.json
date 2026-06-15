@@ -1,0 +1,19 @@
+{
+  "balances": {},
+  "market": [
+    { "id": 1, "name": "看电视 15 分钟", "cost": 1, "builtIn": true },
+    { "id": 2, "name": "小零食奖励一次", "cost": 2, "builtIn": true },
+    { "id": 3, "name": "选择一次晚饭菜单", "cost": 2, "builtIn": true },
+    { "id": 4, "name": "免一次小家务", "cost": 2, "builtIn": true },
+    { "id": 5, "name": "玩手柄游戏半小时", "cost": 3, "builtIn": true },
+    { "id": 6, "name": "周末多玩 30 分钟", "cost": 4, "builtIn": true },
+    { "id": 7, "name": "玩真人 CS 一次", "cost": 5, "builtIn": true },
+    { "id": 8, "name": "买一本喜欢的书", "cost": 6, "builtIn": true },
+    { "id": 9, "name": "一次亲子电影夜", "cost": 8, "builtIn": true },
+    { "id": 10, "name": "公园/游乐场活动一次", "cost": 10, "builtIn": true },
+    { "id": 11, "name": "和家长一起做一次烘焙", "cost": 6, "builtIn": true },
+    { "id": 12, "name": "睡前多听一个故事", "cost": 1, "builtIn": true },
+    { "id": 13, "name": "周末选择一次家庭活动", "cost": 8, "builtIn": true }
+  ],
+  "redemptions": []
+}

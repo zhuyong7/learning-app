@@ -1,0 +1,208 @@
+{
+  "2026-06-07": {
+    "date": "2026-06-07",
+    "tasks": [
+      {
+        "id": 2,
+        "name": "数学练习20分钟",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      }
+    ]
+  },
+  "2026-06-09": {
+    "date": "2026-06-09",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "计算小达人",
+        "done": true,
+        "coins": 2,
+        "rewardClaimedBy": [
+          "child"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "计算小超市",
+        "done": true,
+        "coins": 2,
+        "rewardClaimedBy": [
+          "child"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "加油站",
+        "done": true,
+        "coins": 3,
+        "rewardClaimedBy": [
+          "child"
+        ]
+      }
+    ]
+  },
+  "2026-06-08": {
+    "date": "2026-06-08",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "珠心算",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 2,
+        "name": "语文五星学霸",
+        "done": false,
+        "coins": 2,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 3,
+        "name": "默写能手",
+        "done": false,
+        "coins": 4,
+        "rewardClaimedBy": [
+          "child"
+        ]
+      }
+    ]
+  },
+  "2026-06-10": {
+    "date": "2026-06-10",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "珠心算",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 2,
+        "name": "英语",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 3,
+        "name": "语文",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      }
+    ]
+  },
+  "2026-06-11": {
+    "date": "2026-06-11",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "珠心算",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 2,
+        "name": "英语",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 3,
+        "name": "语文",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      }
+    ]
+  },
+  "2026-06-12": {
+    "date": "2026-06-12",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "珠心算",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 2,
+        "name": "英语",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 3,
+        "name": "语文",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      }
+    ]
+  },
+  "2026-06-13": {
+    "date": "2026-06-13",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "珠心算",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 2,
+        "name": "英语",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 3,
+        "name": "语文",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      }
+    ]
+  },
+  "2026-06-14": {
+    "date": "2026-06-14",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "珠心算",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 2,
+        "name": "英语",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      },
+      {
+        "id": 3,
+        "name": "语文",
+        "done": false,
+        "coins": 1,
+        "rewardClaimedBy": []
+      }
+    ]
+  },
+  "2026-06-15": {
+    "date": "2026-06-15",
+    "tasks": []
+  }
+}

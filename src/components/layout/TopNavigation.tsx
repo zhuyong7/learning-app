@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import type { UserProfile } from '../../types/domain';
 import { cn } from '../../utils/classNames';
+import { useAuthContext } from '../../app/auth-context';
 
 const navItems = [
   { to: '/', label: '成长中心' },
+  { to: '/tasks', label: '任务中心' },
   { to: '/trends', label: '成长趋势' },
   { to: '/works', label: '成果库' },
   { to: '/badges', label: '勋章中心' },
@@ -11,9 +13,12 @@ const navItems = [
 
 interface TopNavigationProps {
   user: UserProfile;
+  isLoggedIn: boolean;
 }
 
-export function TopNavigation({ user }: TopNavigationProps) {
+export function TopNavigation({ user, isLoggedIn }: TopNavigationProps) {
+  const { logout, isAdmin } = useAuthContext();
+
   return (
     <header className="sticky top-4 z-20 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
       <nav className="flex flex-col gap-4 rounded-card border border-white/70 bg-white/80 p-3 shadow-card backdrop-blur-2xl lg:flex-row lg:items-center lg:justify-between">
@@ -30,12 +35,14 @@ export function TopNavigation({ user }: TopNavigationProps) {
             </span>
           </NavLink>
 
+          {/* Mobile mini avatar */}
           <div className="flex items-center gap-2 rounded-full bg-slate-50 px-3 py-2 lg:hidden">
             <span className="text-lg">{user.avatar}</span>
             <span className="text-sm font-bold text-growth-ink">Lv.{user.level}</span>
           </div>
         </div>
 
+        {/* Nav items */}
         <div className="flex w-full min-w-0 gap-2 overflow-x-auto rounded-2xl bg-slate-50/80 p-1 [scrollbar-width:thin] lg:w-auto">
           {navItems.map((item) => (
             <NavLink
@@ -56,14 +63,27 @@ export function TopNavigation({ user }: TopNavigationProps) {
           ))}
         </div>
 
+        {/* User info + logout */}
         <div className="hidden items-center gap-3 rounded-2xl bg-white px-4 py-2 shadow-sm ring-1 ring-slate-100 lg:flex">
           <span className="text-2xl">{user.avatar}</span>
           <span>
-            <span className="block text-sm font-bold text-growth-ink">{user.name}</span>
+            <span className="block text-sm font-bold text-growth-ink">
+              {user.name}
+              {isAdmin ? ' 👨‍👩‍👧' : ' 🧒'}
+            </span>
             <span className="block text-xs text-slate-400">
               Lv.{user.level} · {user.title}
             </span>
           </span>
+          {isLoggedIn && (
+            <button
+              type="button"
+              onClick={logout}
+              className="ml-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-500 hover:bg-slate-200"
+            >
+              切换账户
+            </button>
+          )}
         </div>
       </nav>
     </header>

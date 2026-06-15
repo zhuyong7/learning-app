@@ -1,16 +1,36 @@
-import { useState, type ReactNode } from 'react';
+import { useState } from 'react';
+import { useAuthContext } from '../../app/auth-context';
+import { localUser } from '../../data/localData';
+import type { UserProfile } from '../../types/domain';
 import { AssistantBubble } from '../assistant/AssistantBubble';
 import { AssistantPanel } from '../assistant/AssistantPanel';
-import { localUser } from '../../data/localData';
 import { FloatingParticles } from './FloatingParticles';
 import { TopNavigation } from './TopNavigation';
 
 interface AppShellProps {
-  children: ReactNode;
+  children: React.ReactNode;
+}
+
+/** Merge session data with the local user profile for display purposes. */
+function mergeUser(session: { username: string; role: string; childName: string } | null): UserProfile {
+  if (session && session.role === 'child') {
+    return {
+      id: 1,
+      name: session.username,
+      avatar: '🧒',
+      level: 15,
+      exp: 4580,
+      nextLevelExp: 5000,
+      streakDays: 32,
+      title: '森林探险学习家',
+    };
+  }
+  return localUser;
 }
 
 export function AppShell({ children }: AppShellProps) {
   const [assistantOpen, setAssistantOpen] = useState(false);
+  const { session, isLoggedIn } = useAuthContext();
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-growth-background text-growth-ink">
@@ -19,7 +39,7 @@ export function AppShell({ children }: AppShellProps) {
       <FloatingParticles />
 
       <div className="relative z-10 flex min-h-screen flex-col py-4 sm:py-6">
-        <TopNavigation user={localUser} />
+        <TopNavigation user={mergeUser(session)} isLoggedIn={isLoggedIn} />
         <main className="mx-auto w-full max-w-7xl flex-1 px-4 pb-28 pt-8 sm:px-6 sm:pb-32 lg:px-8 lg:py-10 lg:pb-32">
           {children}
         </main>

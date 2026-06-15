@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useAuthContext } from '../../app/auth-context';
 import type { UserProfile } from '../../types/domain';
 
 interface HeroGrowthPanelProps {
@@ -6,7 +7,11 @@ interface HeroGrowthPanelProps {
 }
 
 export function HeroGrowthPanel({ user }: HeroGrowthPanelProps) {
+  const { isLoggedIn, isAdmin } = useAuthContext();
   const progress = Math.min(100, Math.round((user.exp / user.nextLevelExp) * 100));
+
+  // Coin balance placeholder — will be connected to API
+  const coinBalance = 0;
 
   return (
     <motion.section
@@ -91,19 +96,44 @@ export function HeroGrowthPanel({ user }: HeroGrowthPanelProps) {
         </div>
 
         <div className="rounded-[28px] border border-white/55 bg-white/72 p-4 shadow-lg backdrop-blur-md sm:p-5">
-          <div className="mb-3 flex items-center justify-between gap-3 text-sm font-bold text-slate-700">
-            <span>成长值：{user.exp} / {user.nextLevelExp}</span>
-            <span>{progress}%</span>
+          {/* Row: EXP progress + coins + streak */}
+          <div className="flex items-center gap-4">
+            <div className="flex-1">
+              <div className="mb-2 flex items-center justify-between gap-3 text-sm font-bold text-slate-700">
+                <span>成长值：{user.exp} / {user.nextLevelExp}</span>
+                <span>{progress}%</span>
+              </div>
+              <div className="h-5 overflow-hidden rounded-full bg-slate-200/80 p-1 shadow-inner">
+                <motion.div
+                  className="h-full rounded-full bg-gradient-to-r from-emerald-400 via-lime-300 to-amber-300 shadow-[0_0_18px_rgba(74,222,128,0.65)]"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${progress}%` }}
+                  transition={{ duration: 1.1, delay: 0.35, ease: 'easeOut' }}
+                />
+              </div>
+              <p className="mt-2 text-sm font-black text-orange-600">🔥 连续学习{user.streakDays}天</p>
+            </div>
+
+            {/* Coin display (right side) */}
+            {isLoggedIn && (
+              <div
+                className="flex flex-col items-center gap-1 rounded-2xl border-2 px-5 py-3"
+                style={{
+                  borderColor: 'rgba(250, 204, 21, 0.4)',
+                  background: '#fef3c7',
+                  boxShadow: '0 5px 0 rgba(202, 138, 4, 0.15)',
+                }}
+              >
+                <span className="text-xs font-extrabold text-amber-800">🪙 金币</span>
+                <span className="text-2xl font-extrabold text-amber-900">
+                  {coinBalance}
+                </span>
+                {isAdmin && (
+                  <span className="text-[10px] font-bold text-amber-700">家长模式</span>
+                )}
+              </div>
+            )}
           </div>
-          <div className="h-5 overflow-hidden rounded-full bg-slate-200/80 p-1 shadow-inner">
-            <motion.div
-              className="h-full rounded-full bg-gradient-to-r from-emerald-400 via-lime-300 to-amber-300 shadow-[0_0_18px_rgba(74,222,128,0.65)]"
-              initial={{ width: 0 }}
-              animate={{ width: `${progress}%` }}
-              transition={{ duration: 1.1, delay: 0.35, ease: 'easeOut' }}
-            />
-          </div>
-          <p className="mt-3 text-sm font-black text-orange-600">🔥 连续学习{user.streakDays}天</p>
         </div>
       </div>
     </motion.section>

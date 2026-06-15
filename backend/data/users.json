@@ -1,0 +1,14 @@
+{
+  "admin": {
+    "user_name": "admin",
+    "role": "parent",
+    "password_hash": "placeholder",
+    "child_name": "南南"
+  },
+  "child": {
+    "user_name": "child",
+    "role": "child",
+    "password_hash": "placeholder",
+    "child_name": "南南"
+  }
+}

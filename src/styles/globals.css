@@ -67,6 +67,123 @@ select {
   min-height: 100vh;
 }
 
+/* ── Cartoon Task Page Styles ───────────────────────────────────── */
+
+.page {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 24px;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.95) 0 8%, transparent 9%),
+    radial-gradient(circle at 84% 12%, rgba(255, 255, 255, 0.9) 0 6%, transparent 7%),
+    linear-gradient(135deg, #7dd3fc 0%, #b9fbc0 48%, #fff1a8 100%);
+  font-family: "Comic Sans MS", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+}
+
+/* Sky decorations */
+.sky-decor { position: absolute; z-index: 0; pointer-events: none; filter: drop-shadow(0 8px 12px rgba(31, 41, 55, 0.12)); }
+.sky-decor-cloud { font-size: 74px; animation: floatCloud 8s ease-in-out infinite; }
+.cloud-one { top: 28px; left: 44px; }
+.cloud-two { top: 96px; right: 94px; animation-delay: -2.4s; }
+.rainbow { top: 28px; right: 250px; font-size: 72px; transform: rotate(-8deg); animation: gentleBounce 4s ease-in-out infinite; }
+.sparkle { font-size: 34px; animation: twinkle 2.3s ease-in-out infinite; }
+.sparkle-one { top: 170px; left: 9%; }
+.sparkle-two { right: 8%; bottom: 140px; animation-delay: -0.8s; }
+.cube { font-size: 42px; animation: floatCube 5s ease-in-out infinite; }
+.cube-one { left: 8%; bottom: 80px; }
+.cube-two { top: 230px; right: 7%; animation-delay: -1.3s; }
+
+/* App shell */
+.app-shell { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; width: min(1320px, 100%); margin: 0 auto; }
+.main-column { display: grid; gap: 20px; }
+.side-column { display: grid; gap: 20px; }
+
+/* Cards */
+.plan-card, .market-card {
+  border: 4px solid rgba(47, 93, 98, 0.18);
+  border-radius: 34px;
+  background: rgba(255, 253, 240, 0.96);
+  box-shadow: 0 18px 0 rgba(47, 93, 98, 0.08), 0 24px 42px rgba(31, 41, 55, 0.16);
+}
+.plan-card :is(.plan-card-header, .add-task-panel, .empty-state) { padding: 22px 24px; }
+.plan-card-header { border-bottom: 3px dashed rgba(14, 116, 144, 0.18); padding: 22px 24px 18px; }
+
+/* Header elements */
+.card-header, .section-header, .common-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.title-block h1 { margin: 8px 0 6px; color: #0f766e; font-size: clamp(26px, 3.5vw, 40px); line-height: 1; letter-spacing: 1px; text-shadow: 2px 3px 0 rgba(20, 184, 166, 0.18); }
+.title-block p { margin: 0; color: #64748b; font-size: 15px; font-weight: 700; }
+.title-badge, .achievement-label { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 2px solid rgba(251, 146, 60, 0.45); border-radius: 999px; background: #fed7aa; color: #7c2d12; font-weight: 900; box-shadow: 0 5px 0 rgba(251, 146, 60, 0.25); }
+.date-bubble { display: grid; gap: 8px; padding: 14px; border-radius: 24px; font-weight: 900; min-width: 214px; border: 3px solid rgba(59, 130, 246, 0.25); background: #e0f2fe; color: #075985; box-shadow: inset 0 -5px 0 rgba(14, 165, 233, 0.12); }
+.account-badge { display: grid; gap: 8px; justify-items: center; padding: 14px; border-radius: 24px; font-weight: 900; border: 3px solid rgba(34, 197, 94, 0.24); background: #dcfce7; color: #166534; box-shadow: inset 0 -5px 0 rgba(34, 197, 94, 0.12); }
+.coin-pill { padding: 5px 10px; border-radius: 999px; background: #fef3c7; color: #92400e; }
+
+/* Task creation panel */
+.add-task-panel { margin-bottom: 22px; padding: 18px; border-radius: 28px; border: 3px solid rgba(244, 114, 182, 0.22); background: linear-gradient(135deg, #fff7ed, #fdf2f8); }
+.child-tip { margin-bottom: 22px; padding: 18px; border-radius: 28px; border: 3px dashed rgba(14, 116, 144, 0.22); background: rgba(240, 249, 255, 0.78); color: #075985; font-weight: 900; }
+.child-tip p { margin: 6px 0 0; color: #64748b; }
+.input-label { margin-bottom: 12px; color: #be123c; font-weight: 900; }
+.label-icon, .button-icon { display: inline-block; animation: gentleBounce 2.6s ease-in-out infinite; }
+
+/* Inputs */
+.cartoon-input { min-height: 48px; border: 3px solid rgba(244, 114, 182, 0.35); border-radius: 20px; background: #fff; box-shadow: inset 0 -4px 0 rgba(244, 114, 182, 0.08), 0 10px 18px rgba(244, 114, 182, 0.12); padding: 0 16px; font-weight: 700; width: 100%; }
+.cartoon-textarea { border: 3px solid rgba(244, 114, 182, 0.35); border-radius: 20px; background: #fff; box-shadow: inset 0 -4px 0 rgba(244, 114, 182, 0.08); padding: 12px; font-weight: 700; width: 100%; }
+
+/* Buttons */
+.add-button, .save-week-button, .copy-button { min-height: 46px; border: 0; border-radius: 20px; color: #fff; font-weight: 900; transition: transform 0.18s ease, box-shadow 0.18s ease; background: linear-gradient(135deg, #fb7185, #f97316); box-shadow: 0 8px 0 #be123c, 0 14px 24px rgba(251, 113, 133, 0.28); cursor: pointer; }
+.add-button:hover, .save-week-button:hover, .copy-button:hover { transform: translateY(-3px) rotate(-1deg); }
+
+/* Empty state */
+.empty-state { padding: 18px 0 6px; border: 3px dashed rgba(14, 116, 144, 0.22); border-radius: 26px; background: rgba(240, 249, 255, 0.72); text-align: center; }
+.empty-mascot { font-size: 76px; animation: gentleBounce 2.5s ease-in-out infinite; }
+
+/* Task list */
+.tasks { display: grid; gap: 14px; }
+
+/* Market */
+.market-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; padding: 22px 24px 18px; border-bottom: 3px dashed rgba(14, 116, 144, 0.18); }
+.market-balance-pill { display: inline-flex; align-items: center; gap: 4px; padding: 7px 10px; border-radius: 999px; background: #fef3c7; color: #92400e; font-weight: 800; box-shadow: inset 0 -4px 0 rgba(250, 204, 21, 0.16); }
+.market-admin-form { display: grid; gap: 10px; padding: 12px; border: 3px dashed rgba(251, 191, 36, 0.32); border-radius: 22px; background: rgba(255, 247, 237, 0.86); margin-bottom: 14px; }
+.market-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.market-item { position: relative; min-height: 96px; align-content: space-between; overflow: hidden; padding: 14px; border-radius: 22px; background: linear-gradient(135deg, #fff7ed, #fefce8); color: #92400e; border: 3px solid rgba(251, 146, 60, 0.22); }
+.market-item::before, .market-item::after { position: absolute; top: 50%; width: 14px; height: 14px; content: ""; border-radius: 999px; background: rgba(255, 253, 240, 0.96); transform: translateY(-50%); }
+.market-item::before { left: -8px; }
+.market-item::after { right: -8px; }
+.market-ticket-main { position: relative; z-index: 1; display: grid; gap: 6px; }
+.market-ticket-main strong { display: -webkit-box; overflow: hidden; color: #0f766e; font-size: 14px; line-height: 1.25; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.market-cost { display: inline-flex; width: fit-content; padding: 4px 8px; border-radius: 999px; background: #fef3c7; color: #b45309; font-size: 12px; font-weight: 800; box-shadow: inset 0 -3px 0 rgba(250, 204, 21, 0.18); position: relative; z-index: 1; }
+.market-built-in { position: relative; z-index: 1; padding: 4px 8px; border-radius: 999px; background: #e0f2fe; color: #075985; font-size: 12px; font-weight: 800; }
+.redemption-list { margin-top: 14px; padding: 12px; border-radius: 18px; background: #fff7ed; color: #92400e; font-weight: 800; }
+.redemption-list p { margin: 6px 0; }
+
+/* Task form row */
+.task-create-row { display: grid; grid-template-columns: 1fr auto auto; gap: 12px; align-items: center; }
+
+/* Animations */
+@keyframes floatCloud { 0%, 100% { transform: translateX(0) translateY(0); } 50% { transform: translateX(18px) translateY(-8px); } }
+@keyframes floatCube { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-16px) rotate(9deg); } }
+@keyframes gentleBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+@keyframes twinkle { 0%, 100% { transform: scale(0.9) rotate(0deg); opacity: 0.55; } 50% { transform: scale(1.22) rotate(12deg); opacity: 1; } }
+@keyframes shine { 100% { transform: translateX(120%); } }
+
+/* Responsive */
+@media (max-width: 1120px) {
+  .app-shell { grid-template-columns: 1fr; }
+  .side-column { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 800px) {
+  .page { padding: 16px; }
+  .card-header, .section-header, .common-header, .task-main { flex-direction: column; align-items: stretch; }
+  .task-create-row, .market-admin-form { grid-template-columns: 1fr; }
+  .market-list { grid-template-columns: 1fr; }
+  .date-bubble { min-width: 0; width: 100%; }
+  .task { align-items: stretch; flex-direction: column; }
+}
+@media (max-width: 520px) {
+  .market-list { grid-template-columns: 1fr; }
+}
+
 @layer utilities {
   .glass-card {
     border: 1px solid rgba(255, 255, 255, 0.72);
