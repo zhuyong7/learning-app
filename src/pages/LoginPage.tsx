@@ -2,25 +2,23 @@
  * Login page with cartoon style.
  * Supports parent (admin) and child login with role selection.
  */
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { useAuth } from "../hooks/useAuth";
+import { useAuthContext } from "../app/auth-context";
 
-interface LoginPageProps {
-  onLogin: (username: string, role: "parent" | "child") => void;
-}
-
-export default function LoginPage({ onLogin }: LoginPageProps) {
-  const { login, loading, error } = useAuth();
+export default function LoginPage() {
+  const { login: doLogin, loading } = useAuthContext();
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [loginError, setLoginError] = useState<string | null>(null);
 
   const handleLogin = async () => {
     const trimmed = username.trim() || "child";
     try {
-      const result = await login(trimmed);
+      await doLogin(trimmed);
       setLoginError(null);
-      onLogin(result.username, result.role as "parent" | "child");
+      navigate("/tasks");
     } catch (e) {
       const msg = e instanceof Error ? e.message : "登录失败";
       setLoginError(msg);

@@ -204,5 +204,28 @@
   "2026-06-15": {
     "date": "2026-06-15",
     "tasks": []
+  },
+  "2026-06-16": {
+    "date": "2026-06-16",
+    "tasks": [
+      {
+        "id": 1,
+        "name": "语文五星学霸",
+        "done": true,
+        "coins": 1,
+        "rewardClaimedBy": [
+          "child"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "默写能手",
+        "done": true,
+        "coins": 2,
+        "rewardClaimedBy": [
+          "child"
+        ]
+      }
+    ]
   }
 }

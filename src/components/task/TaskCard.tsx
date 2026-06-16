@@ -32,7 +32,8 @@ export default function TaskCard({ task, isToday, isAdmin, onToggle, onDelete }:
       exit={{ opacity: 0, x: -50 }}
       whileHover={!isLocked && !task.done ? { y: -4, rotate: -0.7 } : {}}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
-      className="relative flex items-center gap-2.5 px-3 py-3 overflow-hidden rounded-[1.5rem] border-2 transition-all"
+      onClick={() => canInteract && !task.done && onToggle?.(task)}
+      className="relative flex items-center gap-2.5 px-3 py-3 overflow-hidden rounded-[1.5rem] border-2 transition-all cursor-pointer"
       style={{
         background: task.done
           ? "linear-gradient(135deg, #bbf7d0, #fef3c7)"
@@ -57,7 +58,10 @@ export default function TaskCard({ task, isToday, isAdmin, onToggle, onDelete }:
       {/* Status icon (clickable for check-in) */}
       <button
         type="button"
-        onClick={() => canInteract && !task.done && onToggle?.(task)}
+        onClick={(e) => {
+          e.stopPropagation();
+          if (canInteract && !task.done) onToggle?.(task);
+        }}
         disabled={!canInteract || task.done}
         className="flex-shrink-0 w-[50px] h-[50px] grid place-items-center rounded-xl border-2 text-2xl font-bold cursor-pointer transition-transform"
         style={{
